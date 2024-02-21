@@ -1,0 +1,179 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+body {
+  background-color: #0c7e7a9e;
+}
+.heading {
+  margin: 15px 0;
+}
+
+.heading h1 {
+  color: rgba(255, 255, 0, 0.901);
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 1rem;
+}
+.heading p {
+  max-width: 500px;
+  margin: 0 auto;
+  color: rgb(83, 83, 83);
+}
+
+.search-bar {
+  background: rgb(35, 35, 35);
+  color: gainsboro;
+  margin: 1rem 0;
+  width: 400px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  padding: 0.3rem 1rem;
+}
+
+.logo {
+  height: 6em;
+  padding: 0.7em 0;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.container {
+  width: 80%;
+  margin: 25px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 2rem;
+}
+.card {
+  width: 180px;
+  border-radius: 1rem;
+  background-color: #030e12;
+  padding: 5px;
+}
+
+img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card h3 {
+  color: #fff;
+  font-size: 18px;
+}
+
+.recipeContainer {
+  display: flex;
+  margin: 2.5rem 0;
+}
+
+.numBox {
+  width: 50px;
+  height: 40px;
+  background-color: #030e12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin: 0 5px 0 5px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.content img {
+  width: 100%;
+  height: 600px;
+}
+.content .inner-content {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(107, 107, 107, 0.539);
+  color: #f7fb04;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.food-details {
+  width: 70%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ingredients,
+.instruction {
+  flex-basis: 50%;
+  text-align: justify;
+}
+
+.ingredients h2 {
+  margin-top: 3rem;
+}
+
+.instruction h2 {
+  margin-top: -3rem;
+}
+
+.ingredients h2,
+.instruction h2 {
+  color: #f7fb04;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.ingredients h4 {
+  margin-top: 1.5rem;
+  font-weight: medium;
+  font-size: 18px;
+}
+
+iframe {
+  height: 515px;
+  width: 100%;
+}
+
+.video {
+  max-width: 450px;
+  height: 300px;
+  margin: 3rem;
+}
+
+.menu {
+  transition: all 0.3s;
+}
+.btn {
+  transition: all 0.3s;
+}
